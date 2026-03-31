@@ -1,0 +1,137 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/*caracteristicas de todos os elementos dentro do body*/
+body{
+ color:azure;
+ background-color: #e0e0e0;
+ font-family: Arial,sans-serif;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 1.5;
+ /*espaçamento interno de um elemento*/
+ padding: 30px;
+}
+
+/* "." sinaliza que estamos referenciando uma classe*/
+.header {
+/*o elemento deve ocupar 95% da altura do site*/
+ height: 95vh;
+ /*deve cobrir toda a extensão do fundo em que ele foi destinado e ficar no topo*/
+ background-size: cover;
+ background-position: top;
+ background-color: #4e40b4;
+ background: linear-gradient(to right, #4e40b4, #7770ab);
+ position: relative;
+}
+
+.logo-box {
+ position: absolute;
+ top: 40px;
+ left: 95px;
+
+}
+
+.logo {
+ height: 80px;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+}
+
+.primary-heading {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.primary-heading-main {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 150px;
+    letter-spacing: 5px;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+.primary-heading-second {
+    font-family: Arial, sans-serif;
+    display: block;
+    font-size: 18px;
+    font-weight: 400px;
+    animation-name: moveInRigth;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+.menu1{
+    position: absolute;
+    left: 37%;
+    top: 10%;
+    background-color: #ffffff;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: #4e40b4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu2{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    background-color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: #4e40b4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu3{
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    background-color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: #4e40b4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100);
+    }
+
+    80%{
+        transform: translate(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRigth{
+    0%{
+        opacity: 0;
+        transform: translateX(100);
+    }
+
+    80%{
+        transform: translate(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+

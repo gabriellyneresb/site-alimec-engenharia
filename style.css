@@ -24,15 +24,14 @@ body{
  background-size: cover;
  background-position: top;
  background-color: #4e40b4;
- background: linear-gradient(to right, #4e40b4, #7770ab);
+ background: linear-gradient(to right, #4e40b4, #302774);
  position: relative;
 }
 
 .logo-box {
  position: absolute;
  top: 40px;
- left: 95px;
-
+ left: 70px;
 }
 
 .logo {
@@ -42,67 +41,36 @@ body{
 .text-box {
     position: absolute;
     top: 50%;
-    left: 18%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .primary-heading {
     color: #fff;
     text-transform: uppercase;
+    margin-bottom: 60px;
 }
 
 .primary-heading-main {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 45px;
     font-weight: 150px;
     letter-spacing: 5px;
     animation-name: moveInLeft;
     animation-duration: 3s;
     animation-timing-function: ease-out;
 }
+
 .primary-heading-second {
     font-family: Arial, sans-serif;
     display: block;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 400px;
     animation-name: moveInRigth;
     animation-duration: 3s;
     animation-timing-function: ease-out;
-}
-
-.menu1{
-    position: absolute;
-    left: 37%;
-    top: 10%;
-    background-color: #ffffff;
-    color: #fff;
-    padding: 8px 20px;
-    border-radius: 50px;
-    color: #4e40b4;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.menu2{
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    background-color: #ffffff;
-    padding: 8px 20px;
-    border-radius: 50px;
-    color: #4e40b4;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.menu3{
-    position: absolute;
-    left: 60%;
-    top: 10%;
-    background-color: #ffffff;
-    padding: 8px 20px;
-    border-radius: 50px;
-    color: #4e40b4;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 @keyframes moveInLeft{
@@ -112,7 +80,7 @@ body{
     }
 
     80%{
-        transform: translate(10px);
+        transform: translate(20px);
     }
     100%{
         opacity: 1;
@@ -127,11 +95,38 @@ body{
     }
 
     80%{
-        transform: translate(-10px);
+        transform: translate(-20px);
     }
     100%{
         opacity: 1;
         transform: translate(0);
     }
+}
+
+.btn:link, 
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    left: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+.btn:active{
+    transform: translateY(-1px);
+}
+
+/*hover para quando usuário passar a setinha no elemento*/
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(0, 0, 0, .2);
+}
+
+.btn-white{
+    background-color: #ffffff;
+    color: #4e40b4;
 }
 

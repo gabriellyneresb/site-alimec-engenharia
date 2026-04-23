@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); /*fonte dos dados*/
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); /*fonte dos dados*/
 
 * {
  margin: 0;
@@ -21,13 +21,14 @@ body{
 /* "." sinaliza que estamos referenciando uma classe*/
 .header {
 /*o elemento deve ocupar 95% da altura do site*/
- height: 100vh;
+ height: 90vh;
  /*deve cobrir toda a extensão do fundo em que ele foi destinado e ficar no topo*/
  background-size: cover;
  background-position: top;
  background-color: #4e40b4;
  background: linear-gradient(to right, #7064c9, #302774);
  position: relative;
+ border-radius: 0 0 40px 40px;
 }
 
 .logo-box {
@@ -54,6 +55,16 @@ body{
     animation-timing-function: ease-out;
 }
 
+.menu1:active{
+    transform: translateY(-1px);
+}
+
+/*hover para quando usuário passar a setinha no elemento*/
+.menu1:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(0, 0, 0, .2);
+}
+
 .menu2{
     position: absolute;
     left: 47%;
@@ -68,6 +79,16 @@ body{
     animation-timing-function: ease-out;
 }
 
+.menu2:active{
+    transform: translateY(-1px);
+}
+
+/*hover para quando usuário passar a setinha no elemento*/
+.menu2:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(0, 0, 0, .2);
+}
+
 .menu3{
     position: absolute;
     left: 60%;
@@ -80,6 +101,16 @@ body{
      animation-name: moveInLeft;
     animation-duration: 3s;
     animation-timing-function: ease-out;
+}
+
+.menu3:active{
+    transform: translateY(-1px);
+}
+
+/*hover para quando usuário passar a setinha no elemento*/
+.menu3:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(0, 0, 0, .2);
 }
 
 .text-box {
@@ -187,27 +218,37 @@ body{
 }
 
 .about-us{
-    position: absolute;
-    padding: 60px 20px;
+    position: relative;
+    padding: 30px 20px;
     margin: 0%;
 }
 
 .sobre{
    text-align: left;
     color: #000;
-
+    padding: 60px 40px 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+    border-radius: 40px;
 }
 
 .title-sobre {
     color: #4e40b4;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    animation-name: moveInRigth;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
 }
 
 .dados{
     font-family: 'Poppins', sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 50px;
-    margin-top: 50px;
+    margin-top: 60px;
     text-align: center;
 }
 
@@ -221,9 +262,52 @@ body{
 .dados p{
     font-size: 15px;
     color: #4e40b4;
-     margin-right: 50px;
+    margin-right: 50px;
 }
 
 .image-about-us{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
 
+.container-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+    align-items: stretch;
+}
+
+.services{
+    position: relative;
+    background-color: #4e40b4;
+    padding: 20px 20px;
+    border-radius: 40px 40px 0 0;
+}
+
+.Contato{
+    position: relative;
+    padding: 20px 20px;
+    color: #fdfcfe;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Popins', sans-serif;
+    border-radius: 40px 40px 0 0;
+}
+
+.title-contact{
+    color: #4e40b4;
+}
+
+
+.rodape{
+    background-color: #4e40b4;
+    color: #fff;
+    padding: 30px ;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 40px 40px 0 0;
+    font-family: Arial, Helvetica, sans-serif;
 }

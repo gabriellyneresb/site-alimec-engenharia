@@ -330,7 +330,7 @@ body{
 
 .Contato{
     position: relative;
-    padding: 20px 20px;
+    padding: 10px 10px;
     color: #fdfcfe;
     text-align: center;
     border-radius: 10px;
@@ -342,8 +342,43 @@ body{
     font-family: 'Popins', sans-serif;
 }
 
+.infos{
+    position: relative;
+    text-align: center;
+    align-content: space-between;
+    background-color: #4e40b4;
+    border-radius: 30px;
+    padding: 8px 20px;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.infos:active{
+    transform: translateY(-1px);
+}
+
+/*hover para quando usuário passar a setinha no elemento*/
+.infos:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(0, 0, 0, .2);
+}
+
+.info-container{
+     display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.contato-info{
+    color: #000;
+}
+
 .contato-image{
-    padding: 0;
+    position: relative;
+    border: #4e40b4;
+    border-radius: 40px;
 }
 
 .rodape{

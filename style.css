@@ -5,6 +5,14 @@
  padding: 0;
  box-sizing: border-box;
 }
+/*para nao aparecer linha embaixo após clicado*/
+.menu a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
 
 /*caracteristicas de todos os elementos dentro do body*/
 body{

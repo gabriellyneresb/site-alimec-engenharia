@@ -5,8 +5,13 @@
  padding: 0;
  box-sizing: border-box;
 }
+
 /*para nao aparecer linha embaixo após clicado*/
 .menu a{
+    text-decoration: none;
+}
+
+.infos a{
     text-decoration: none;
 }
 
@@ -351,6 +356,7 @@ body{
 }
 
 .infos{
+    display: block;
     position: relative;
     text-align: center;
     align-content: space-between;
@@ -385,8 +391,6 @@ body{
 
 .contato-image{
     position: relative;
-    border: #4e40b4;
-    border-radius: 40px;
 }
 
 .rodape{

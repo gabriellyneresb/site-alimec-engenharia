@@ -15,6 +15,10 @@
     text-decoration: none;
 }
 
+.infos::visited{
+    color: #fff;
+}
+
 html{
     scroll-behavior: smooth;
 }
